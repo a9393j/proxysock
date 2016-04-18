@@ -12,11 +12,9 @@ def parse_args():
 	parser.add_argument("-p",action="store",dest="port",required=True,
 						type=int,help="port used to setup the proxy server")
 	parser.add_argument("-fh",action="store",dest="fHost",required=True,
-						help="Host address of the original server to which the traffic will\
-						be forwarded to.")
+						help="Host address of the original server to which the traffic will be forwarded to.")
 	parser.add_argument("-fp",action="store",dest="fPort",required=True,
-						type=int,help="Port of the original server to which the traffic will\
-						be forwarded to.")
+						type=int,help="Port of the original server to which the traffic will be forwarded to.")
 	return parser.parse_args()
 
 def main():
